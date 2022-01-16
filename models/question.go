@@ -27,6 +27,7 @@ func Get(id int, questions []Question) Question {
 	return questions[idx]
 }
 
+// Update function to update question detail by id
 func Update(id int, question Question, questions []Question) Question {
 	for i := 0; i < len(questions); i++ {
 		attr := questions[i]
